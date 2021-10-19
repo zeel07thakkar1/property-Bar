@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <title>Properties Bar</title>
+</head>
+<body>
+   <div class="main_propertybar">
+        <div class="sub_propertybar">
+            <div class="property_heading">
+                <i class="fa fa-cog cog_icon"></i>
+                <span class="property_main_heading">PROPERTIES</span>
+                <a class="close_icon"><i class="fa fa-times " aria-hidden="true"></i></a>
+            </div>
+
+            <div class="property_main_tab">
+               <div class="property_sub_tab active_tab content_tab">
+                    <i class="far fa-keyboard mb-8" aria-hidden="true"></i>
+                    <span>Content</span>
+               </div>
+               <div class="property_sub_tab style_tab">
+                    <i class="fas fa-palette mb-8"></i>
+                    <span>Style</span>
+                </div>
+                <div class="property_sub_tab advanced_tab">
+                    <i class="fas fa-code mb-8" aria-hidden="true"></i>
+                    <span>Advanced</span>
+                </div>
+            </div>
+
+            
+            <div class="property_empty_tab"> </div>
+
+           <!----------------1--------------------->
+
+            <div class="tab_1_content">
+                <div class="tab_1_content_heading">
+                    <span>Section Width</span>
+                    <i class="fa fa-chevron-right cyan_clr" aria-hidden="true"></i>
+                </div>
+                <div class="tab_1_content_data_main">
+                    <div class="tab_1_content_data">
+                        <span>Content Width:</span>
+                        <div></div>
+                        <div class="select_dropdown">
+                            <select id="content_width" name="content_width" class="select">
+                                <option value="volvo">Full Width</option>
+                                <option value="saab">Container</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="tab_1_content_data">
+                        <span>Alignment:</span>
+                        <div></div>
+                        <div class="select_dropdown">
+                            <select id="content_width" name="content_width" class="select">
+                                <option value="volvo">Start</option>
+                                <option value="saab">Middle</option>
+                                <option value="saab">End</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab_1_content_empty"></div>
+                
+                <div class="tab_1_content_heading">
+                    <span>Section Height</span>
+                    <i class="fa fa-chevron-right cyan_clr" aria-hidden="true"></i>
+                </div>
+                <div class="tab_1_content_data_main">
+                    <div class="tab_1_content_data">
+                        <span>Section Height:</span>
+                        <div></div>
+                        <div class="select_dropdown">
+                            <select id="content_width" name="content_width" class="select">
+                                <option value="volvo">Default</option>
+                                <option value="saab">Fit to Screen</option>
+                                <option value="saab">Min Height</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="tab_1_content_data">
+                        <span>Overflow:</span>
+                        <div></div>
+                        <div class="select_dropdown">
+                            <select id="content_width" name="content_width" class="select">
+                                <option value="volvo">Default</option>
+                                <option value="saab">Auto</option>
+                                <option value="saab">Hidden</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="tab_1_content_data">
+                        <span>HTML:</span>
+                        <div></div>
+                        <div class="select_dropdown">
+                            <select id="content_width" name="content_width" class="select">
+                                <option value="volvo">div</option>
+                                <option value="saab">section</option>
+                                <option value="saab">nav</option>
+                                <option value="saab">main</option>
+                                <option value="saab">article</option>
+                                <option value="saab">aside</option>
+                                <option value="saab">header</option>
+                                <option value="saab">footer</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab_1_content_empty"></div>
+
+                <div class="tab_1_content_heading">
+                    <span>No of Columns</span>
+                    <i class="fa fa-chevron-right cyan_clr" aria-hidden="true"></i>
+                </div>
+                <div class="tab_1_content_data_main">
+                    <div class="tab_1_content_data">
+                        <span>No of Columns:</span>
+                        <div></div>
+                        <div class="select_dropdown">
+                            <select id="content_width" name="content_width" class="select">
+                                <option value="volvo">1</option>
+                                <option value="saab">2</option>
+                                <option value="saab">3</option>
+                                <option value="saab">4</option>
+                                <option value="saab">5</option>
+                                <option value="saab">6</option>
+                                
+                            </select>
+                        </div>
+                       
+                    </div>
+                   
+                    
+                </div>
+            </div>
+
+            <!----------------2--------------------->
+
+            <div class="tab_2_content">
+                <div class="tab_1_content_heading">
+                    <span>Color</span>
+                    <i class="fa fa-chevron-right cyan_clr" aria-hidden="true"></i>
+                </div>
+                <div class="tab_1_content_data_main">
+                    <div class="tab_2_content_data">
+                        <span>Color:</span>
+                        <div></div>
+                        <div class="select_dropdown">
+                            <input type="color" id="clr" name="clr" class="color_picker">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab_1_content_empty"></div>
+                
+                <div class="tab_1_content_heading">
+                    <span>Background Color</span>
+                    <i class="fa fa-chevron-right cyan_clr" aria-hidden="true"></i>
+                </div>
+                <div class="tab_1_content_data_main">
+                    <div class="tab_2_content_data">
+                        <span>Background Color:</span>
+                        <div></div>
+                        <div class="select_dropdown">
+                            <input type="color" id="bg_clr" name="bg_clr" class="color_picker">
+                        </div>
+                    </div>
+                   
+                   
+                </div>
+
+                <div class="tab_1_content_empty"></div>
+
+                <div class="tab_1_content_heading">
+                    <span>Border</span>
+                    <i class="fa fa-chevron-right cyan_clr" aria-hidden="true"></i>
+                </div>
+                <div class="tab_1_content_data_main">
+                    <div class="tab_1_content_data">
+                        <span>Border Style:</span>
+                        <div></div>
+                        <div class="select_dropdown">
+                            <select id="content_width" name="content_width" class="select">
+                                <option value="volvo">None</option>
+                                <option value="saab">Solid</option>
+                                <option value="saab">Dashed</option>
+                                <option value="saab">Dotted</option>
+                                <option value="saab">Double</option>
+                                <option value="saab">Groove</option>
+                                <option value="saab">Ridge</option>
+                            </select>
+                        </div>
+                       
+                    </div>
+                   
+                    
+                </div>
+            </div>
+
+            <!----------------3--------------------->
+
+            <div class="tab_3_content">
+                <div class="tab_1_content_heading">
+                    <span>Margin & Padding</span>
+                    <i class="fa fa-chevron-right cyan_clr" aria-hidden="true"></i>
+                </div>
+                <div class="tab_1_content_data_main">
+                    <div class="tab_3_content_data">
+                        <div class="mp_heading">
+                            <span>Margin</span>
+                            <span class="small"><u>px</u></span>
+                        </div>
+                        <div class="mp_box">
+                            <input type="number" class="mp_input" value="0">
+                            <input type="number" class="mp_input" value="0">
+                            <input type="number" class="mp_input" value="0">
+                            <input type="number" class="mp_input" value="0">
+                        </div>
+                        <div class="mp_box">
+                            <span>Top</span>
+                            <span>Right</span>
+                            <span>Bottom</span>
+                            <span>Left</span>
+                        </div>
+                    </div>
+                    <div class="tab_3_content_data">
+                        <div class="mp_heading">
+                            <span>Padding</span>
+                            <span class="small"><u>px</u></span>
+                        </div>
+                        <div class="mp_box">
+                            <input type="number" class="mp_input" value="20">
+                            <input type="number" class="mp_input" value="20">
+                            <input type="number" class="mp_input" value="20">
+                            <input type="number" class="mp_input" value="20">
+                        </div>
+                        <div class="mp_box">
+                            <span>Top</span>
+                            <span>Right</span>
+                            <span>Bottom</span>
+                            <span>Left</span>
+                        </div>
+                    </div>
+                    <div class="tab_1_content_data">
+                        <span>Position:</span>
+                        <div></div>
+                        <div class="select_dropdown">
+                            <select id="content_width" name="content_width" class="select">
+                                <option value="volvo">Static</option>
+                                <option value="saab">Absolute</option>
+                                <option value="saab">Relative</option>
+                                <option value="saab">Fixed</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="tab_1_content_data">
+                        <span>Z-index:</span>
+                        <div></div>
+                        <div class="select_dropdown">
+                           <input type="number" class="select">
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="tab_1_content_empty"></div>
+                
+                <div class="tab_1_content_heading">
+                    <span>Shadow</span>
+                    <i class="fa fa-chevron-right cyan_clr" aria-hidden="true"></i>
+                </div>
+                <div class="tab_1_content_data_main">
+                    <div class="tab_1_content_data">
+                        <span>Shadow:</span>
+                        <div></div>
+                        <div class="select_dropdown">
+                            <select id="content_width" name="content_width" class="select">
+                                <option value="volvo">None</option>
+                                <option value="saab">Outset</option>
+                                <option value="saab">Inset</option>
+                            </select>
+                        </div>
+                    </div>
+                   
+                   
+                </div>
+
+            </div>
+
+
+        
+        </div>
+   </div>
+</body>
+</html>
